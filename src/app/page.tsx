@@ -26,7 +26,8 @@ export default function Home() {
             </Link>
           </div>
           <div className="w-[40%]">
-            <img
+            <Image
+              alt="hero Image"
               className="rounded-2xl "
               src="https://ellow.io/wp-content/uploads/2023/06/Next.js-Developer-1024x944.jpg"
             />

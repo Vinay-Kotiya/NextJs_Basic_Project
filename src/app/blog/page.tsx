@@ -1,13 +1,15 @@
 // pages/index.js
 import Link from "next/link";
 import { posts } from "../../data/posts";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
     <div className="h-screen w-full flex justify-center items-center flex-col">
       <div className="bg-gray-800 py-15 rounded relative">
         <Link href="/">
-          <img
+          <Image
+            alt="Close img"
             src={"https://www.svgrepo.com/show/474223/close-circle.svg"}
             // className="h-10"
             className="hover:scale-x-110 h-10 absolute top-0 right-0 m-5"

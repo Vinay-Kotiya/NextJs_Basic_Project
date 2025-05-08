@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import axios from "axios";
+import Image from "next/image";
 
 const page = () => {
   const [user, setUser] = useState({
@@ -16,7 +17,8 @@ const page = () => {
       <div className="flex relative flex-col border border-white rounded-2xl  md:py-20  py-10 bg-gray-900 md:px-10  px-5 row-start-2 items-center ">
         {/* <h1 className="text-4xl m-2">Signup</h1> */}
         <Link href="/">
-          <img
+          <Image
+            alt="close"
             src={"https://www.svgrepo.com/show/474223/close-circle.svg"}
             // className="h-10"
             className="hover:scale-x-110 h-10 absolute top-0 right-0 m-5"
